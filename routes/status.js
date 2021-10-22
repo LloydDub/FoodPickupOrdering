@@ -11,7 +11,12 @@ module.exports = function(db) {
   router.get("/", function(req, res) {
     db
       .query(``)
-      .then(res.json('ok'))
+      .then(() => {
+        const status = {
+          status: 'ok'
+        }
+        res.json(status)
+      })
       .catch(err => {
         res
           .status(500)

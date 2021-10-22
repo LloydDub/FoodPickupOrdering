@@ -38,7 +38,7 @@ app.use(express.static("public"));
 const status = require("./routes/status");
 const customers = require("./routes/customers");
 // const login = require("./routes/login");
-// const menu_items = require("./routes/menu_items");
+const menu_items = require("./routes/menu_items");
 // const tickets = require("./routes/tickets");
 // const locations = require("./routes/locations");
 
@@ -47,7 +47,7 @@ const customers = require("./routes/customers");
 app.use("/api/status", status(db));
 app.use("/api/customers", customers(db));
 // app.use("/api/login", login(db));
-// app.use("/api/menu_items", menu_items(db));
+app.use("/api/menu_items", menu_items(db));
 // app.use("/api/tickets", tickets(db));
 // app.use("/api/locations", locations(db));
 

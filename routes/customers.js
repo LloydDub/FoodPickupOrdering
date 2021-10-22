@@ -10,10 +10,10 @@ module.exports = function(db) {
   */
   router.get("/", function(req, res) {
     db
-      .query(`SELECT * FROM users`)
+      .query(`SELECT * FROM customers`)
       .then(data => {
-        const users = data.rows;
-        res.json({ users });
+        const customers = data.rows;
+        res.json({ customers });
       })
       .catch(err => {
         res
@@ -21,7 +21,6 @@ module.exports = function(db) {
           .json({ error: err.message });
       });
   });
-
 
   /**
   * Endpoint ==> POST /customers
@@ -31,7 +30,7 @@ module.exports = function(db) {
   router.post("/", function(req, res) {
     const inputName = req.body.name;
     const params = [inputName]
-    const query = `INSERT INTO users (name) VALUES ($1)`;
+    const query = `INSERT INTO customers (name) VALUES ($1)`;
 
     db
       .query(query, params)
