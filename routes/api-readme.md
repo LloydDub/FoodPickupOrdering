@@ -1,5 +1,5 @@
 # Restaurant RESTful API
-This document provides guidelines and exmaples for FoodPickupOrdering Web APIs which allows the user to manager their restaurant's App.  
+This document provides guidelines and examples for FoodPickupOrdering Web APIs which allows the user to manager their restaurant's App.  
 
 The API aims to support a RESTful JSON format available at localhost:8080/api
 
@@ -20,6 +20,13 @@ The API aims to support a RESTful JSON format available at localhost:8080/api
 
 <br>
 
+### Current
+---
+`GET /status`  
+returns a JSON object containing a the "status" of the server
+
+<br>
+
 ### Login
 ---
 `POST /login`  
@@ -30,7 +37,7 @@ handles a request for customer to log into app
 ### Customer's Information
 ---
 `GET /customers`  
-returns an object of all customers with their information  
+returns a JSON object of all customers with their information  
 
 `POST /customers`  
 handles a request to add an individual customer to db  
@@ -46,7 +53,7 @@ handles a request to update individual customer in db
 ### Menu
 ---
 `GET /menu_items`  
-returns an object with nested objects of available food  
+returns a JSON object with nested objects of available food  
 
 <br>
 
