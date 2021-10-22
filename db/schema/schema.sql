@@ -36,17 +36,16 @@ CREATE TABLE locations (
 CREATE TABLE menu_items (
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR(255) NOT NULL,
-  size name VARCHAR(255) NOT NULL,
+  size VARCHAR(255) NOT NULL,
   price DECIMAL(10, 2) NOT NULL,
   location_id INTEGER REFERENCES locations(id) ON DELETE CASCADE
-  quantity SMALLINT NOT NULL
 );
 
 CREATE TABLE tickets (
   id SERIAL PRIMARY KEY NOT NULL,
   created_at TIMESTAMP NOT NULL,
   finished_at TIMESTAMP,
-  ticket_num INT NOT NULL AUTO_INCREMENT,
+  ticket_num SERIAL NOT NULL,
   customer_id INTEGER REFERENCES customers(id) ON DELETE CASCADE,
   location_id INTEGER REFERENCES locations(id) ON DELETE CASCADE
 );
@@ -54,5 +53,6 @@ CREATE TABLE tickets (
 CREATE TABLE ticket_menu_items (
   id SERIAL PRIMARY KEY NOT NULL,
   ticket_id INTEGER REFERENCES tickets(id) ON DELETE CASCADE,
-  menu_item_id INTEGER REFERENCES menu_items(id) ON DELETE CASCADE
+  menu_item_id INTEGER REFERENCES menu_items(id) ON DELETE CASCADE,
+  quantity SMALLINT NOT NULL
 );

@@ -1,0 +1,13 @@
+INSERT INTO menu_items (name, size, price, location_id) VALUES ('Burger', 'N/A', 7.99, 1),
+('Burger', 'N/A', 7.99, 2),
+('French Fries', 'S', 3.99, 1),
+('French Fries', 'S', 3.99, 2),
+('French Fries', 'M', 4.99, 1),
+('French Fries', 'M', 4.99, 2),
+('French Fries', 'L', 5.99, 1),
+('French Fries', 'L', 5.99, 2),
+('Vanilla Shake', 'M', 3.50, 1),
+('Vanilla Shake', 'L', 4.50, 1),
+('Vanilla Shake', 'S', 3.00, 2),
+('Vanilla Shake', 'M', 4.00, 2),
+('Vanilla Shake', 'L', 4.50, 2);
