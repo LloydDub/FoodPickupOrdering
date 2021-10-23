@@ -10,7 +10,7 @@ The API aims to support a RESTful JSON format available at localhost:8080/api
 /menu_items  
 /tickets  
 /locations  
-/login
+/login  
 /status
  
 
