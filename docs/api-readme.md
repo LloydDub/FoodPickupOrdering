@@ -83,7 +83,7 @@ returns a list of all restaurants
 handles a request to create a new restaurant  
 
 `GET /locations/:id`  
-returns a specific restaurant's information  
+returns a specific restaurant's information given their id  
 
 `PUT /locations/:id`  
 handles a request to update an individual restaurant's information in server's db

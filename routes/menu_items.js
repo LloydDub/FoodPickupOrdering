@@ -9,8 +9,10 @@ module.exports = function(db) {
   * returns an JSON object of all menu items
   */
   router.get("/", function(req, res) {
+    const query = `SELECT * FROM menu_items`;
+
     db
-      .query(`SELECT * FROM menu_items`)
+      .query(query)
       .then(data => {
         const menu_items = data.rows;
         res.json({ menu_items });

@@ -50,13 +50,13 @@ module.exports = function(db) {
     router.get("/:id", function(req, res) {
       let customerId = req.params.id;
       const params = [customerId];
-      const query = `SELECT * FROM customers WHERE id = $1`
+      const query = `SELECT * FROM customers WHERE id = $1`;
 
       db
         .query(query, params)
         .then(data => {
-          const customer = data.rows;
-          res.json({ customer });
+          const customers = data.rows;
+          res.json({ customers });
         })
         .catch(err => {
           res
