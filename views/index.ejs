@@ -17,8 +17,19 @@
 </head>
 
 <body>
-  <!-- ---------------welcome\splash------------------------- -->
   <div class="container">
+  <!----------------------- Login Form ----------------------->
+  <div>
+    <form action="api/login/" method="POST">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="loginEmail">
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="loginPassword">
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <!-- ---------------welcome\splash------------------------- -->
     <div class="splash">
       <header display="flex">
         <h1 id="title" class="bigText">Welcome to Food Ordering App</h1>
