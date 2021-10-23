@@ -11,6 +11,7 @@ The API aims to support a RESTful JSON format available at localhost:8080/api
 /tickets  
 /locations  
 /login
+/status
  
 
 <br>
