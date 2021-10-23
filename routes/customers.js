@@ -42,7 +42,7 @@ module.exports = function(db) {
       });
   });
 
-    /**
+  /**
   * Endpoint ==> GET /customers/:id
   * localhost:8080/api/customers/:id
   * returns a specific customer given their customer id
