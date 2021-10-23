@@ -30,7 +30,7 @@ module.exports = function(db) {
    router.get("/:id", function(req, res) {
     let locationId = req.params.id;
     const params = [locationId];
-    const query = `SELECT * FROM customers WHERE id = $1`;
+    const query = `SELECT * FROM locations WHERE id = $1`;
 
     db
       .query(query, params)
