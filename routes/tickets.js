@@ -1,0 +1,26 @@
+const express = require('express');
+const router  = express.Router();
+
+module.exports = function(db) {
+
+  /**
+  * Endpoint ==> GET /tickets
+  * localhost:8080/api/tickets/
+  * returns an JSON object of all tickets
+  */
+  router.get("/", function(req, res) {
+    db
+      .query(`SELECT * FROM tickets`)
+      .then(data => {
+        const tickets = data.rows;
+        res.json({ tickets });
+      })
+      .catch(err => {
+        res
+          .status(500)
+          .json({ error: err.message });
+      });
+  });
+
+return router;
+}
