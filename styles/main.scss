@@ -1,9 +1,4 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-
   background: rgb(163, 208, 219);
   background: linear-gradient(
     227deg,
@@ -19,6 +14,14 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.top-bar {
+  overflow: hidden;
+  background-color: rgb(238, 229, 229);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 
 .welcomeText {
@@ -94,10 +97,6 @@ body {
 // --------------------------cart------------------------------
 
 .eComm {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, #e3f0ff, #fafcff);
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
