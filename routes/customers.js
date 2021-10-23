@@ -28,7 +28,7 @@ module.exports = function(db) {
   * handles a request to add an individual customer to db
   */
   router.post("/", function(req, res) {
-    const inputName = req.body.name;
+    // const inputName = req.body.name;
     const params = [inputName]
     const query = `INSERT INTO customers (name) VALUES ($1)`;
 
@@ -41,6 +41,29 @@ module.exports = function(db) {
           .json({ error: err.message });
       });
   });
+
+    /**
+  * Endpoint ==> GET /customers/:id
+  * localhost:8080/api/customers/:id
+  * returns a specific customer given their customer id
+  */
+    router.get("/:id", function(req, res) {
+      let customerId = req.params.id;
+      const params = [customerId];
+      const query = `SELECT * FROM customers WHERE id = $1`
+
+      db
+        .query(query, params)
+        .then(data => {
+          const customer = data.rows;
+          res.json({ customer });
+        })
+        .catch(err => {
+          res
+            .status(500)
+            .json({ error: err.message });
+        });
+    });
 
 return router;
 }
