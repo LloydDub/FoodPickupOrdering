@@ -85,4 +85,4 @@ handles a request to create a new restaurant
 returns a specific restaurant's information  
 
 `PUT /locations/:id`  
-handles a request to update an individual restaurant's information in  server's db
+handles a request to update an individual restaurant's information in server's db
