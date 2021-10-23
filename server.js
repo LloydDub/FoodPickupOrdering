@@ -33,30 +33,24 @@ app.use(
 
 app.use(express.static("public"));
 
-// Separated Routes for each Resource
 
+// Separated Routes for each Resource
 const status = require("./routes/status");
 const customers = require("./routes/customers");
-// const login = require("./routes/login");
+const login = require("./routes/login");
 const menu_items = require("./routes/menu_items");
 const tickets = require("./routes/tickets");
 const locations = require("./routes/locations");
 
 // Mount all resource routes
-
 app.use("/api/status", status(db));
 app.use("/api/customers", customers(db));
-// app.use("/api/login", login(db));
+app.use("/api/login", login(db));
 app.use("/api/menu_items", menu_items(db));
 app.use("/api/tickets", tickets(db));
 app.use("/api/locations", locations(db));
 
-// Note: mount other resources here, using the same pattern above
-
 // Home page
-// Warning: avoid creating more routes in this file!
-// Separate them into separate routes files (see above).
-
 app.get("/", (req, res) => {
   res.render("index");
 });
