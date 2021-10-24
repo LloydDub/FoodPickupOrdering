@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -103,7 +103,6 @@ body {
 }
 
 .CartContainer {
-  width: 70%;
   height: 90%;
   background-color: #ffffff;
   border-radius: 20px;
@@ -272,4 +271,19 @@ hr {
   font-family: "Open Sans";
   font-weight: 600;
   color: #202020;
+}
+
+// ------------------------------order confirmation ----------------
+
+.order-confirmation {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.order-details {
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px #1687d933;
 }
