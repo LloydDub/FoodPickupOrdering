@@ -1,6 +1,14 @@
 // See: https://sass-lang.com/
 
-body,
 html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
   margin: 0;
+}
+
+.section {
+  height: 120vh;
 }
