@@ -1,7 +1,7 @@
 <nav class="nav">
   <% if (!user) { %>
   <div class="nav-item">
-    <form action="api/login/" method="POST">
+    <form action="login/" method="POST">
       <label for="loginEmail">Email:</label>
       <input type="email" id="loginEmail" name="loginEmail">
       <label for="loginPassword">Password:</label>
@@ -23,7 +23,7 @@
         <a href="#order" class="nav-link">Your Meal</a>
     </div>
     <div>
-      <form method="POST" action="/api/logout">
+      <form method="POST" action="/logout">
         <p>Logged in as: Customer <%- user -%></p>
         <input type="submit" value="Logout">
       </form>
@@ -40,7 +40,7 @@
       <a href="admin.ejs" class="nav-link">Control Panel</a>
   </div>
   <div>
-    <form method="POST" action="/api/logout">
+    <form method="POST" action="/logout">
       <p>Logged in as: Admin</p>
       <input type="submit" value="Logout">
     </form>

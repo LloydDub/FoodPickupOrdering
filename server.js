@@ -54,11 +54,11 @@ const logout = require("./routes/logout");
 // Mount all resource routes
 app.use("/api/status", status(db));
 app.use("/api/customers", customers(db));
-app.use("/api/login", login(db));
+app.use("/login", login(db));
 app.use("/api/menu_items", menu_items(db));
 app.use("/api/tickets", tickets(db));
 app.use("/api/locations", locations(db));
-app.use("/api/logout", logout(db));
+app.use("/logout", logout(db));
 
 function parseCookies(request) {
   var list = {},
