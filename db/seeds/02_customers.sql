@@ -9,35 +9,35 @@ VALUES (
   (
     'Marcis Awzum',
     'mschul@hotmail.com',
-    'upthestairs',
+    'password',
     '18264409800',
     3
   ),
   (
     'Doug Slacken',
     'dboy@hotmail.ca',
-    'outthedoor',
+    'password',
     '18390072564',
     2
   ),
   (
     'Felicia Bye',
     'byefelicia@gmail.com',
-    'overthefence',
+    'password',
     '12895467341',
     1
   ),
   (
     'Jutch Jeudie',
     'lawislife@gmail.ca',
-    'downtheslide',
+    'password',
     '19208978878',
     1
   ),
   (
     'admin',
     'admin@email.com',
-    'admin',
+    'password',
     '00000000000',
     3
   );
