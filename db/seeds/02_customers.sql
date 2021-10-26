@@ -1,15 +1,15 @@
 INSERT INTO customers (name, email, password, phone, address_id)
 VALUES (
-    'Lloyd Isdaman',
-    'lloydguy@gmail.com',
-    'intheweeds',
+    'admin',
+    'admin@email.com',
+    'password',
     '12459863658',
-    4
+    1
   ),
   (
     'Marcis Awzum',
     'mschul@hotmail.com',
-    'password',
+    'upthestairs',
     '18264409800',
     3
   ),

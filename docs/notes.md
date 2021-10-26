@@ -16,14 +16,16 @@
 
   3. Seed hotdogs to database
 
-  4. connect menu items to /GET menu_items endpoint
+  4. add twilo API to website
 
-  5. Implement cart's functionality
+  5. connect menu items to /GET menu_items endpoint
+
+  6. Implement cart's functionality
     5.1 merge cart & menu ejs views
     5.2 after merge, cart needs to be a form that submits data to `POST /tickets`
     5.3 make cart pretty
 
-  6. add style to front end
+  7. add style to front end
 
   
 

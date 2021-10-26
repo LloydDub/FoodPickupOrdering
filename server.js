@@ -12,7 +12,7 @@ const cookieSession = require("cookie-session");
 // use cookie middleware for sessions``
 app.use(
   cookieSession({
-    name: "session12",
+    name: "session",
     keys: ["key1"],
   })
 );
@@ -73,9 +73,10 @@ function parseCookies(request) {
 
 // Home page
 app.get("/", (req, res) => {
-  let cookies = parseCookies(req);
-  console.log("AAAA", cookies.username);
-  res.render("index", { username: "admin" });
+  templateVars = {
+    user: req.session.userId,
+  };
+  res.render("index", templateVars);
 });
 
 app.listen(PORT, () => {
