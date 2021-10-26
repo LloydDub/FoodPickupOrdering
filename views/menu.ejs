@@ -1,105 +1,116 @@
-<link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-<link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-<link rel="stylesheet" href="/styles/main.css" type="text/css" />
-<link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-<script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
 <script type="text/javascript" src="/scripts/app.js"></script>
-<h1>Menu</h1>
+
+
+
+<h1>Your Items</h1>
 
 <div class="shopping-cart">
 
   <div class="column-labels">
     <label class="product-image">Image</label>
-    <label class="product-details">Product</label>
+    <label class="product-details">Item</label>
     <label class="product-price">Price</label>
     <label class="product-quantity">Quantity</label>
-    <label class="product-removal">Remove</label>
-    <label class="product-line-price">Total</label>
+    < <label class="product-line-price">Total</label>
   </div>
 
   <div class="product">
     <div class="product-image">
-      <img src=>
+      <img
+        src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3880&q=80">
     </div>
     <div class="product-details">
       <div class="product-title">Item 1</div>
-      <p class="product-description">Lorem Ipsum.</p>
+      <p class="product-description">Lorem ipsum.</p>
     </div>
     <div class="product-price">7.99</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
 
-    <div class="product-line-price">00.01</div>
+    <div class="product-line-price">0.00</div>
   </div>
+
+
   <div class="product">
     <div class="product-image">
-      <img src=>
+      <img
+        src="https://images.unsplash.com/photo-1615485290836-4ebcebf44aaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3880&q=80">
     </div>
     <div class="product-details">
       <div class="product-title">Item 2</div>
-      <p class="product-description">Lorem Ipsum.</p>
+      <p class="product-description">Lorem Ipsum</p>
     </div>
-    <div class="product-price">7.99</div>
+    <div class="product-price">5.00</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
 
-    <div class="product-line-price">00.01</div>
+    <div class="product-line-price">0.00</div>
   </div>
   <div class="product">
     <div class="product-image">
-      <img src=>
+      <img
+        src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80">
     </div>
     <div class="product-details">
       <div class="product-title">Item 3</div>
-      <p class="product-description">Lorem Ipsum.</p>
+      <p class="product-description">Lorem Ipsum</p>
     </div>
-    <div class="product-price">7.99</div>
+    <div class="product-price">5.50</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
 
-    <div class="product-line-price">00.01</div>
+    <div class="product-line-price">0.00</div>
   </div>
   <div class="product">
     <div class="product-image">
-      <img src=>
+      <img
+        src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3141&q=80">
     </div>
     <div class="product-details">
       <div class="product-title">Item 4</div>
-      <p class="product-description">Lorem Ipsum.</p>
+      <p class="product-description">Lorem Ipsum</p>
     </div>
-    <div class="product-price">7.99</div>
+    <div class="product-price">3.99</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
 
-    <div class="product-line-price">00.01</div>
+    <div class="product-line-price">0.00</div>
   </div>
+  <form action="/" method="GET" role="form">
+    <div class="totals">
+      <div class="totals-item">
+        <label>Subtotal</label>
+        <div class="totals-value" id="cart-subtotal">0.00</div>
+      </div>
+      <div class="totals-item">
+        <label>Tax (5%)</label>
+        <div class="totals-value" id="cart-tax">0.00</div>
+      </div>
+
+      <div class="totals-item totals-item-total">
+        <label>Grand Total</label>
+        <div class="totals-value" id="cart-total">0.00</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="telephone">
+        phone number please
+        <input type="tel" class="form-control" id="telephone" placeholder="SMS when food is ready">
+    </div>
+    <div class="form-group">
+      <label for="customerName">
+        Name Please
+      </label>
+      <input type="text" class="form-control" id="customerName">
+    </div>
+    <button class="checkout">Checkout</button>
+  </form>
 
 
-</div>
-<div class="product-line-price">00.00</div>
-</div>
-
-<div class="totals">
-  <div class="totals-item">
-    <label>Subtotal</label>
-    <div class="totals-value" id="cart-subtotal">00.00</div>
-  </div>
-  <div class="totals-item">
-    <label>Tax (5%)</label>
-    <div class="totals-value" id="cart-tax">00.00</div>
-  </div>
-
-  <div class="totals-item totals-item-total">
-    <label>Grand Total</label>
-    <div class="totals-value" id="cart-total">00.00</div>
-  </div>
-</div>
-
-<button class="checkout">Checkout</button>
 
 </div>
