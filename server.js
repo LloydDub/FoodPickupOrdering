@@ -49,6 +49,7 @@ const login = require("./routes/login");
 const menu_items = require("./routes/menu_items");
 const tickets = require("./routes/tickets");
 const locations = require("./routes/locations");
+const logout = require("./routes/logout");
 
 // Mount all resource routes
 app.use("/api/status", status(db));
@@ -57,6 +58,7 @@ app.use("/api/login", login(db));
 app.use("/api/menu_items", menu_items(db));
 app.use("/api/tickets", tickets(db));
 app.use("/api/locations", locations(db));
+app.use("/api/logout", logout(db));
 
 function parseCookies(request) {
   var list = {},
@@ -77,10 +79,6 @@ app.get("/", (req, res) => {
     user: req.session.userId,
   };
   res.render("index", templateVars);
-});
-
-app.get("/admin", function (req, res) {
-  res.sendFile("admin.ejs", { root: VIEWS });
 });
 
 app.listen(PORT, () => {
