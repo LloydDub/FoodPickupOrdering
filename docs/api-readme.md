@@ -11,7 +11,9 @@ The API aims to support a RESTful JSON format available at localhost:8080/api
 /tickets  
 /locations  
 /login  
+/logout 
 /status
+/control_panel
  
 
 <br>
@@ -32,6 +34,13 @@ returns a JSON object containing a the "status" of the server
 ---
 `POST /login`  
 handles a request for customer to log into app  
+
+<br>
+
+### Login
+---
+`POST /logout`  
+handles a request for customer to logout of app 
 
 <br>
 
@@ -87,3 +96,10 @@ returns a specific restaurant's information given their id
 
 `PUT /locations/:id`  
 handles a request to update an individual restaurant's information in server's db
+
+### Control Panel
+---
+`GET /control_panel`
+direct admin to control panel's html page
+
+

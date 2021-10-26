@@ -19,7 +19,7 @@
 
   <% if ((user) && user !== 1) { %>
   <div class="nav-item">
-    <form method="POST" action="/logout">
+    <form class=nav-item method="POST" action="/logout">
       <p>Logged in as: Customer <%- user -%></p>
       <input type="submit" value="Logout">
     </form>
@@ -33,9 +33,7 @@
 
   <% if (user === 1) { %>
   <div class="nav-item">
-    <h1>Admin logged in</h1>
-
-    <form method="POST" action="/logout">
+    <form class=nav-item method="POST" action="/logout">
       <p>Logged in as: Admin</p>
       <input type="submit" value="Logout">
     </form>
