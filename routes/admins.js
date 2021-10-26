@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/admin", function (req, res) {
-  res.render("../views/admin.ejs");
+app.get("/admin", function (req, res) {
+  res.sendFile("admin.ejs", { root: VIEWS });
 });
-return router;

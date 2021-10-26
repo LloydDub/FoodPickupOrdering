@@ -79,6 +79,10 @@ app.get("/", (req, res) => {
   res.render("index", templateVars);
 });
 
+app.get("/admin", function (req, res) {
+  res.sendFile("admin.ejs", { root: VIEWS });
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });

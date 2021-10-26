@@ -16,48 +16,9 @@
 <body>
 
   <!-- ----------------------nav bar--------------------- -->
-  <nav class="nav">
-    <% if (!user) { %>
-    <div class="nav-item">
-      <form action="api/login/" method="POST">
-        <label for="loginEmail">Email:</label>
-        <input type="email" id="loginEmail" name="loginEmail">
-        <label for="loginPassword">Password:</label>
-        <input type="password" id="loginPassword" name="loginPassword">
-        <input type="submit" value="Login">
-        </form>
-        <a href="#welcome" class="nav-link">Welcome</a>
-        <a href="#menu" class="nav-link">Menu</a>
-        <a href="#cart" class="nav-link">Check Out</a>
-        <a href="#order" class="nav-link">Your Meal</a>
-    </div>
-    <% } %>
-
-    <% if ((user) && user !== 1) { %>
-      <div class="nav-item">
-          <h1>User logged in</h1>
-          <a href="#welcome" class="nav-link">Welcome</a>
-          <a href="#menu" class="nav-link">Menu</a>
-          <a href="#cart" class="nav-link">Check Out</a>
-          <a href="#order" class="nav-link">Your Meal</a>
-      </div>
-    <% } %>
-
-    <% if (user === 1) { %>
-      <div class="nav-item">
-        <h1>Admin logged in</h1>
-        <a href="#welcome" class="nav-link">Welcome</a>
-        <a href="#menu" class="nav-link">Menu</a>
-        <a href="#cart" class="nav-link">Check Out</a>
-        <a href="#order" class="nav-link">Your Meal</a>
-    </div>
-    <% } %>
-
-  </nav>
+  <div class="nav-container" id="navbar" data-label="Welcome"><%- include('nav.ejs') %></div>
   <!-- ----------------------------welcome--------------------------------- -->
-  <div class="section" id="welcome" data-label="Welcome"><%- include('welcome.ejs') %>
-
-  </div>
+  <div class="section" id="welcome" data-label="Welcome"><%- include('welcome.ejs') %></div>
   <!-- ------------------------------------menu------------------------------------------- -->
   <div class="section" id="menu" data-label="Menu"><%- include('menu.ejs') %></div>
   <!-- -----------------cart---------------------- --------------------------------------------->
