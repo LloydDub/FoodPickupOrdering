@@ -27,6 +27,10 @@
 
   7. add style to front end
 
+  8. stretch: Each section needs a link to scroll back to top of page
+
+  9. stretch: Nav bar should be sticky to scroll with user
+
   
 
 
