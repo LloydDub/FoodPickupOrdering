@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Restaurant</title>
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
 
   <!----- CSS ----->
   <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
@@ -15,13 +16,11 @@
   <!----- App Javascript ----->
   <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
   <script type="text/javascript" src="/scripts/app.js"></script>
+
+
 </head>
 
 <body>
-  <!----- header ----->
-  <div class="restaurant-header">
-    <%- include('header.ejs') %>
-  </div>
   <!----- nav bar ----->
   <div class="nav-container" id="navbar" data-label="navbar">
     <%- include('nav.ejs') %>
@@ -34,13 +33,10 @@
   <div class="section" id="menu" data-label="Menu">
     <%- include('menu.ejs') %>
   </div>
-  <!----- cart ----->
-  <div class="section" id="cart" data-label="Cart">
-    <%- include('cart.ejs') %>
-  </div>
   <!----- order ----->
   <div class="section" id="order" data-label="Order">
     <%- include('order.ejs') %>
   </div>
 </body>
+
 </html>
