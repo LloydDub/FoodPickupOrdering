@@ -7,13 +7,15 @@ const sassMiddleware = require("./lib/sass-middleware");
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
-const cookieSession = require('cookie-session')
+const cookieSession = require("cookie-session");
 
 // use cookie middleware for sessions``
-app.use(cookieSession({
-  name: 'session12',
-  keys: ['key1']
-}));
+app.use(
+  cookieSession({
+    name: "session12",
+    keys: ["key1"],
+  })
+);
 
 // PG database client/connection setup
 const { Pool } = require("pg");
@@ -40,7 +42,6 @@ app.use(
 
 app.use(express.static("public"));
 
-
 // Separated Routes for each Resource
 const status = require("./routes/status");
 const customers = require("./routes/customers");
@@ -57,9 +58,24 @@ app.use("/api/menu_items", menu_items(db));
 app.use("/api/tickets", tickets(db));
 app.use("/api/locations", locations(db));
 
+function parseCookies(request) {
+  var list = {},
+    rc = request.headers.cookie;
+
+  rc &&
+    rc.split(";").forEach(function (cookie) {
+      var parts = cookie.split("=");
+      list[parts.shift().trim()] = decodeURI(parts.join("="));
+    });
+
+  return list;
+}
+
 // Home page
 app.get("/", (req, res) => {
-  res.render("index");
+  let cookies = parseCookies(req);
+  console.log("AAAA", cookies.username);
+  res.render("index", { username: "admin" });
 });
 
 app.listen(PORT, () => {
