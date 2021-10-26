@@ -80,36 +80,36 @@
 
     <div class="product-line-price">0.00</div>
   </div>
-  <form action="/" method="GET" role="form">
-    <div class="totals">
-      <div class="totals-item">
-        <label>Subtotal</label>
-        <div class="totals-value" id="cart-subtotal">0.00</div>
-      </div>
-      <div class="totals-item">
-        <label>Tax (5%)</label>
-        <div class="totals-value" id="cart-tax">0.00</div>
+
+  <div id="checkout">
+    <form action="/" method="GET" role="form">
+      <div class="totals">
+        <div class="totals-item">
+          <label>Subtotal</label>
+          <div class="totals-value" id="cart-subtotal">0.00</div>
+        </div>
+        <div class="totals-item">
+          <label>Tax (5%)</label>
+          <div class="totals-value" id="cart-tax">0.00</div>
+        </div>
+
+        <div class="totals-item totals-item-total">
+          <label>Grand Total</label>
+          <div class="totals-value" id="cart-total">0.00</div>
+        </div>
       </div>
 
-      <div class="totals-item totals-item-total">
-        <label>Grand Total</label>
-        <div class="totals-value" id="cart-total">0.00</div>
-      </div>
-    </div>
+      <div class="form-group">
 
-    <div class="form-group">
-      <label for="telephone">
-        phone number please
-        <input type="tel" class="form-control" id="telephone" placeholder="SMS when food is ready">
-    </div>
-    <div class="form-group">
-      <label for="customerName">
-        Name Please
-      </label>
-      <input type="text" class="form-control" id="customerName">
-    </div>
-    <button class="checkout">Checkout</button>
-  </form>
+
+        <input type="tel" class="form-control" id="telephone" placeholder="Phone Number">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="customerName" placeholder="Name">
+      </div>
+      <button class="checkout">Checkout</button>
+    </form>
+  </div>
 
 
 
