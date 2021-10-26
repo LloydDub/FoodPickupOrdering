@@ -32,7 +32,7 @@ module.exports = function(db) {
   * handles a request for customer to log into app
   */
   router.post("/", function(req, res) {
-    const query = `SELECT email, password
+    const query = `SELECT *
     FROM customers
     WHERE email = $1
     AND password = $2;`;
@@ -43,6 +43,7 @@ module.exports = function(db) {
     db
       .query(query, params)
       .then(data => {
+        // console.log(data.rows[0].id);
         // if customer email & password match
         if (checkBlankFields(req)) {
           return res.json("email and password field cannot be left blank");
@@ -50,7 +51,7 @@ module.exports = function(db) {
 
         if (checkCustomerPassword(req, data) && checkCustomerEmail(req, data)) {
           // set cookie
-          req.session.customerCookie = req.body.loginPassword;
+          req.session.userId = data.rows[0].id;
           return res.json("Customer Successfully logged in");
         } else {
           // otherwise, display "incorrect username/password"

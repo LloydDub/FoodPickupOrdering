@@ -11,7 +11,7 @@ const cookieSession = require('cookie-session')
 
 // use cookie middleware for sessions``
 app.use(cookieSession({
-  name: 'session12',
+  name: 'session',
   keys: ['key1']
 }));
 
@@ -59,7 +59,10 @@ app.use("/api/locations", locations(db));
 
 // Home page
 app.get("/", (req, res) => {
-  res.render("index");
+  templateVars = {
+    user: req.session.userId
+  }
+  res.render("index", templateVars);
 });
 
 app.listen(PORT, () => {
