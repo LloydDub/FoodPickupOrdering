@@ -1,61 +1,105 @@
+<link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+<link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+<link rel="stylesheet" href="/styles/main.css" type="text/css" />
+<link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-<h2 class="menu-group-heading">
-  Food Items
-</h2>
-<div class="menu-group">
-  <div class="menu-item">
-    <img class="menu-item-image" src="https://dummyimage.com/600x400/000/fff" alt="Burger">
-    <div class="menu-item-text">
-      <h3 class="menu-item-heading">
-        <span class="menu-item-name">Burger</span>
-        <span class="menu-item-price">$8.50</span>
-      </h3>
-      <p class="menu-item-description">
-        Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-        congue eu mauris nec, pretium tincidunt nulla.
-      </p>
-    </div>
+<script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+<script type="text/javascript" src="/scripts/app.js"></script>
+<h1>Menu</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
   </div>
-  <div class="menu-item">
-    <img class="menu-item-image" src="https://dummyimage.com/600x400/0f0/fff" alt="Fires">
-    <div class="menu-item-text">
-      <h3 class="menu-item-heading">
-        <span class="menu-item-name">Fries</span>
-        <span class="menu-item-price">$3.50</span>
-      </h3>
-      <p class="menu-item-description">
-        Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-        congue eu mauris nec, pretium tincidunt nulla.
-      </p>
+
+  <div class="product">
+    <div class="product-image">
+      <img src=>
     </div>
+    <div class="product-details">
+      <div class="product-title">Item 1</div>
+      <p class="product-description">Lorem Ipsum.</p>
+    </div>
+    <div class="product-price">7.99</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+
+    <div class="product-line-price">00.01</div>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src=>
+    </div>
+    <div class="product-details">
+      <div class="product-title">Item 2</div>
+      <p class="product-description">Lorem Ipsum.</p>
+    </div>
+    <div class="product-price">7.99</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+
+    <div class="product-line-price">00.01</div>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src=>
+    </div>
+    <div class="product-details">
+      <div class="product-title">Item 3</div>
+      <p class="product-description">Lorem Ipsum.</p>
+    </div>
+    <div class="product-price">7.99</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+
+    <div class="product-line-price">00.01</div>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src=>
+    </div>
+    <div class="product-details">
+      <div class="product-title">Item 4</div>
+      <p class="product-description">Lorem Ipsum.</p>
+    </div>
+    <div class="product-price">7.99</div>
+    <div class="product-quantity">
+      <input type="number" value="0" min="0">
+    </div>
+
+    <div class="product-line-price">00.01</div>
+  </div>
+
+
+</div>
+<div class="product-line-price">00.00</div>
+</div>
+
+<div class="totals">
+  <div class="totals-item">
+    <label>Subtotal</label>
+    <div class="totals-value" id="cart-subtotal">00.00</div>
+  </div>
+  <div class="totals-item">
+    <label>Tax (5%)</label>
+    <div class="totals-value" id="cart-tax">00.00</div>
+  </div>
+
+  <div class="totals-item totals-item-total">
+    <label>Grand Total</label>
+    <div class="totals-value" id="cart-total">00.00</div>
   </div>
 </div>
-<div class="menu-group">
-  <div class="menu-item">
-    <img class="menu-item-image" src="https://dummyimage.com/600x400/f00/000" alt="hot dog">
-    <div class="menu-item-text">
-      <h3 class="menu-item-heading">
-        <span class="menu-item-name">Hot Dog</span>
-        <span class="menu-item-price">$5.50</span>
-      </h3>
-      <p class="menu-item-description">
-        Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-        congue eu mauris nec, pretium tincidunt nulla.
-      </p>
-    </div>
-  </div>
-  <div class="menu-item">
-    <img class="menu-item-image" src="https://dummyimage.com/600x400/00f/000" alt="Milk Shake">
-    <div class="menu-item-text">
-      <h3 class="menu-item-heading">
-        <span class="menu-item-name">Shake</span>
-        <span class="menu-item-price">$6.25</span>
-      </h3>
-      <p class="menu-item-description">
-        Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-        congue eu mauris nec, pretium tincidunt nulla.
-      </p>
-    </div>
-  </div>
-</div>
+
+<button class="checkout">Checkout</button>
+
 </div>
