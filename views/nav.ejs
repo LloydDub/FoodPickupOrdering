@@ -1,4 +1,5 @@
 <nav class="nav">
+
   <% if (!user) { %>
   <div class="nav-item">
     <form action="login/" method="POST">
@@ -7,43 +8,43 @@
       <label for="loginPassword">Password:</label>
       <input type="password" id="loginPassword" name="loginPassword">
       <input type="submit" value="Login">
-      </form>
-      <a href="#welcome" class="nav-link">Welcome</a>
-      <a href="#menu" class="nav-link">Menu</a>
-      <a href="#cart" class="nav-link">Check Out</a>
-      <a href="#order" class="nav-link">Your Meal</a>
+    </form>
+
+    <a href="#welcome" class="nav-link">Welcome</a>
+    <a href="#menu" class="nav-link">Menu</a>
+    <a href="#cart" class="nav-link">Check Out</a>
+    <a href="#order" class="nav-link">Your Meal</a>
   </div>
   <% } %>
 
   <% if ((user) && user !== 1) { %>
-    <div class="nav-item">
-        <a href="#welcome" class="nav-link">Welcome</a>
-        <a href="#menu" class="nav-link">Menu</a>
-        <a href="#cart" class="nav-link">Check Out</a>
-        <a href="#order" class="nav-link">Your Meal</a>
-    </div>
-    <div>
-      <form method="POST" action="/logout">
-        <p>Logged in as: Customer <%- user -%></p>
-        <input type="submit" value="Logout">
-      </form>
-    </div>
+  <div class="nav-item">
+    <form method="POST" action="/logout">
+      <p>Logged in as: Customer <%- user -%></p>
+      <input type="submit" value="Logout">
+    </form>
+
+    <a href="#welcome" class="nav-link">Welcome</a>
+    <a href="#menu" class="nav-link">Menu</a>
+    <a href="#cart" class="nav-link">Check Out</a>
+    <a href="#order" class="nav-link">Your Meal</a>
+  </div>
   <% } %>
 
   <% if (user === 1) { %>
-    <div class="nav-item">
-      <h1>Admin logged in</h1>
-      <a href="#welcome" class="nav-link">Welcome</a>
-      <a href="#menu" class="nav-link">Menu</a>
-      <a href="#cart" class="nav-link">Check Out</a>
-      <a href="#order" class="nav-link">Your Meal</a>
-      <a href="admin.ejs" class="nav-link">Control Panel</a>
-  </div>
-  <div>
+  <div class="nav-item">
+    <h1>Admin logged in</h1>
+
     <form method="POST" action="/logout">
       <p>Logged in as: Admin</p>
       <input type="submit" value="Logout">
     </form>
+
+    <a href="#welcome" class="nav-link">Welcome</a>
+    <a href="#menu" class="nav-link">Menu</a>
+    <a href="#cart" class="nav-link">Check Out</a>
+    <a href="#order" class="nav-link">Your Meal</a>
+    <a href="admin.ejs" class="nav-link">Control Panel</a>
   </div>
   <% } %>
 
