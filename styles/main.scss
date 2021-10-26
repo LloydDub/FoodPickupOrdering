@@ -1,10 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .nav {
   overflow: hidden;
-  background-color: #eee5e5;
+  background-image: url("https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -12,17 +9,31 @@ html {
   width: 100%;
 }
 
-#welcome {
-  background: #aff8db;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
-#title {
-  padding-top: 50px;
+#welcome {
+  background-image: url("https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
+
 .welcomeText {
   word-wrap: break-word;
   width: 400px;
   border: 1px solid #000000;
+  background-color: white;
 }
 
 // --------------------------------------------MENU\CART_____________------------------------------
@@ -107,6 +118,38 @@ label {
   margin-top: -45px;
 }
 
+#cart {
+  background: #fff5ba;
+}
+.eComm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CartContainer {
+  width: 60%;
+  height: 90%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px #1687d933;
+}
+
+.Header {
+  margin: auto;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Heading {
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #2f3841;
+}
 /* Column headers */
 .column-labels {
   label {
@@ -160,6 +203,16 @@ label {
     font-family: $font-bold;
     font-size: 12px;
     border-radius: 3px;
+  }
+
+  .title {
+    text-align: center;
+    padding-top: 10px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: "Open Sans";
+    font-weight: 800;
+    color: #202020;
   }
 
   .remove-product:hover {
@@ -296,3 +349,56 @@ label {
   flex-direction: row;
   justify-content: flex-end;
 }
+
+.restaurant-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-image: url("https://images.unsplash.com/photo-1550547660-d9450f859349?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1965&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.restaurant-header h1 {
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 5px;
+}
+
+.nav-item p {
+  padding: 5px;
+  color: white;
+}
+
+.nav-item form {
+  padding: 5px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+// @media screen and (min-width: 992px) {
+//   .menu {
+//     font-size: 16px;
+//   }
+
+//   .menu-group {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+
+//   .menu-item-image {
+//     width: 125px;
+//     height: 125px;
+//   }
+// }

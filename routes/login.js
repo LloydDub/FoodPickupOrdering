@@ -50,10 +50,10 @@ module.exports = function (db) {
         if (checkCustomerPassword(req, data) && checkCustomerEmail(req, data)) {
           // set cookie
           req.session.userId = data.rows[0].id;
-          return res.json("Customer Successfully logged in");
+          res.redirect("/")
         } else {
           // otherwise, display "incorrect username/password"
-          return res.json("Incorrect email or password");
+          res.json("Incorrect email or password");
         }
       })
       .catch((err) => {

@@ -49,14 +49,18 @@ const login = require("./routes/login");
 const menu_items = require("./routes/menu_items");
 const tickets = require("./routes/tickets");
 const locations = require("./routes/locations");
+const logout = require("./routes/logout");
+const controlPanel = require("./routes/control_panel");
 
 // Mount all resource routes
 app.use("/api/status", status(db));
 app.use("/api/customers", customers(db));
-app.use("/api/login", login(db));
+app.use("/login", login(db));
 app.use("/api/menu_items", menu_items(db));
 app.use("/api/tickets", tickets(db));
 app.use("/api/locations", locations(db));
+app.use("/logout", logout(db));
+app.use("/control_panel", controlPanel(db));
 
 function parseCookies(request) {
   var list = {},
