@@ -28,31 +28,3 @@ module.exports = function(db) {
 
 return router;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-request.post('https://textbelt.com/text', {
-  form: {
-    phone: '2503017090',
-    message: 'test key.... successful',
-    key: 'f751f02d43ddb5027e239875b6394331fb45e3d8AXoUL1dlGMMKEipRSfqcEyCps',
-  },
-}, (err, httpResponse, body) => {
-  console.log(JSON.parse(body));
-});
