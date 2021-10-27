@@ -50,6 +50,7 @@ const menu_items = require("./routes/menu_items");
 const tickets = require("./routes/tickets");
 const locations = require("./routes/locations");
 const logout = require("./routes/logout");
+const controlPanel = require("./routes/control_panel");
 const sms = require("./routes/sms");
 
 // Mount all resource routes
@@ -60,6 +61,7 @@ app.use("/api/menu_items", menu_items(db));
 app.use("/api/tickets", tickets(db));
 app.use("/api/locations", locations(db));
 app.use("/logout", logout(db));
+app.use("/control_panel", controlPanel(db));
 app.use("/sms", sms(db));
 
 function parseCookies(request) {

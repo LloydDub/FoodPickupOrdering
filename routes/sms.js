@@ -12,7 +12,7 @@ module.exports = function(db) {
   router.get("/", function(req, res) {
     request.post('https://textbelt.com/text', {
       form: {
-        phone: '2503017090',
+        phone: '',
         message: 'test key2.... successful',
         key: 'f751f02d43ddb5027e239875b6394331fb45e3d8AXoUL1dlGMMKEipRSfqcEyCps',
       },
