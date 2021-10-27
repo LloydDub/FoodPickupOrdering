@@ -1,2 +1,118 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Restaurant</title>
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+
+  <!----- CSS ----->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+  <!----- App Javascript ----->
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+
+
+</head>
+
 <h1>Control Panel</h1>
-<a href="/">home page</a>
+<p><a href="/" style="color: black;">Home</a></p>
+
+<main class="control-panel">
+  <section class="control-container">
+    
+    <div id="update-menu">
+      <form method="POST" action="/api/menu_items" id="update-menu-item">
+        <h3>Update menu item:
+        </h3><br>
+        <div class="update-container">
+          <label for="menu_item_id" style="color: black;">Menu item ID:</label><br>
+          <input type="text" placeholder="Refer to menu list"><br>
+          <label for="size" style="color: black;">Name:</label><br>
+          <input type="text" placeholder="e.g. Burger, Hot Dog, etc..."><br>
+          <label for="size" style="color: black;">Size:</label><br>
+          <input type="text" placeholder="e.g. S, M, L, N/A, etc..."><br>
+          <label for="price" style="color: black;">Price:</label><br>
+          <input type="text" placeholder="e.g. 4.99"><br>
+          <label for="location_id" style="color: black;">Location ID:</label><br>
+          <input type="text" placeholder="1 for East OR 2 for West"><br>
+          <button type="submit">Submit changes</button>
+        </div>
+      </form>
+    
+      <form method="POST" action="/api/menu_items" id="add-menu-item">
+        <h3>Add menu item:
+        </h3><br>
+        <div class="update-container">
+          <label for="name">Item name:</label><br>
+          <input type="text" placeholder="e.g Burger, Hot Dog, etc..."><br>
+          <label for="size">Size:</label><br>
+          <input type="text" placeholder="e.g. S, M, L, N/A, etc..."><br>
+          <label for="price">Price:</label><br>
+          <input type="text" placeholder="e.g. 4.99"><br>
+          <label for="location_id">Location ID:</label><br>
+          <input type="text" placeholder="1 for East OR 2 for West"><br>
+          <button type="submit">Submit new item</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="update-customer">
+      <form method="POST" action="/api/customers" id="update-customer-info">
+        <h3>Update customer:
+        </h3><br>
+        <div class="update-container">
+          <label for="customer_id">Customer ID:</label><br>
+          <input type="text" placeholder="Refer to customer list"><br>
+          <label for="name">Name:</label><br>
+          <input type="text" placeholder="e.g. John Doe"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" placeholder="e.g. email@gmail.com"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" placeholder="Create password..."><br>
+          <label for="phone">Phone number:</label><br>
+          <input type="text" placeholder="e.g. 12463578900"><br>
+          <label for="country">Country:</label><br>
+          <input type="text" placeholder="e.g. Canada"><br>
+          <label for="street">Street:</label><br>
+          <input type="text" placeholder="e.g. 123 Drury Ln"><br>
+          <label for="city">City:</label><br>
+          <input type="text" placeholder="e.g. Ottawa"><br>
+          <label for="province">Province:</label><br>
+          <input type="text" placeholder="e.g. Ontario"><br>
+          <label for="postal_code">Postal code:</label><br>
+          <input type="text" placeholder="e.g. N3B 4D4"><br>
+          <button type="submit">Update customer</button>
+        </div>
+      </form>
+
+      <form method="POST" action="/api/customers" id="add-customer">
+        <h3>Add customer:
+        </h3><br>
+        <div class="update-container">
+          <label for="name">Name:</label><br>
+          <input type="text" placeholder="e.g. John Doe"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" placeholder="e.g. email@gmail.com"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" placeholder="Create password..."><br>
+          <label for="phone">Phone number:</label><br>
+          <input type="text" placeholder="e.g. 12463578900"><br>
+          <label for="country">Country:</label><br>
+          <input type="text" placeholder="e.g. Canada"><br>
+          <label for="street">Street:</label><br>
+          <input type="text" placeholder="e.g. 123 Drury Ln"><br>
+          <label for="city">City:</label><br>
+          <input type="text" placeholder="e.g. Ottawa"><br>
+          <label for="province">Province:</label><br>
+          <input type="text" placeholder="e.g. Ontario"><br>
+          <label for="postal_code">Postal code:</label><br>
+          <input type="text" placeholder="e.g. N3B 4D4"><br>
+          <button type="submit">Add new customer</button>
+        </div>
+      </form>  
+    </div>
+  </section>
+</main>
