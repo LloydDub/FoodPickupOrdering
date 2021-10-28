@@ -24,7 +24,7 @@ module.exports = function (db) {
    * handles a request to add an individual customer to db
    */
   router.post("/", function (req, res) {
-    // const inputName = req.body.name;
+    const inputName = req.body.name;
     const params = [inputName];
     const query = `INSERT INTO customers (name) VALUES ($1)`;
 
