@@ -10,7 +10,7 @@ module.exports = function (db) {
   router.get("/", function (req, res) {
     let userID = req.session.userId;
     const params = [userID];
-    const query = `SELECT * FROM tickets WHERE customer_id = $1`;
+    const query = `SELECT * FROM tickets JOIN customers ON customers.id = customer_id WHERE customer_id = $1`;
 
     db.query(query, params)
       .then((data) => {
