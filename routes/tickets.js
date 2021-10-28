@@ -14,7 +14,8 @@ module.exports = function (db) {
     SELECT * FROM tickets
     JOIN customers ON customers.id = customer_id
     WHERE customer_id = $1
-    ORDER BY created_at DESC`;
+    ORDER BY created_at DESC
+    `;
 
     db.query(query, params)
       .then((data) => {
