@@ -1,5 +1,9 @@
 #menu {
-  background-image: url('../assets/images/menuBackground.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../assets/images/menuBackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
