@@ -2,47 +2,61 @@
 
   <% if (!user) { %>
   <div class="nav-item">
-    <form action="login/" method="POST">
-      <label for="loginEmail">Email:</label>
-      <input type="email" id="loginEmail" name="loginEmail">
-      <label for="loginPassword">Password:</label>
-      <input type="password" id="loginPassword" name="loginPassword">
-      <input type="submit" value="Login">
-    </form>
+    <div class="nav-browse">
+      <a href="#welcome" class="nav-link"><b>Welcome</b></a>
+      <a href="#menu" class="nav-link"><b>Menu</b></a>
+      <a href="#order" class="nav-link"><b>Your Meal</b></a>
+    </div>
 
-    <a href="#welcome" class="nav-link">Welcome</a>
-    <a href="#menu" class="nav-link">Menu</a>
-    <a href="#cart" class="nav-link">Check Out</a>
-    <a href="#order" class="nav-link">Your Meal</a>
+    <div class="nav-login">
+      <form action="login/" method="POST">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="loginEmail">
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword">
+        <input type="submit" class="btn btn-primary" value="Login">
+      </form>
+    </div>
+
   </div>
   <% } %>
 
   <% if ((user) && user !== 1) { %>
   <div class="nav-item">
-    <form class=nav-item method="POST" action="/logout">
-      <p>Logged in as: Customer <%- user -%></p>
-      <input type="submit" value="Logout">
-    </form>
 
-    <a href="#welcome" class="nav-link">Welcome</a>
-    <a href="#menu" class="nav-link">Menu</a>
-    <a href="#cart" class="nav-link">Check Out</a>
-    <a href="#order" class="nav-link">Your Meal</a>
+    <div class="nav-browse">
+      <a href="#welcome" class="nav-link"><b>Welcome</b></a>
+      <a href="#menu" class="nav-link"><b>Menu</b></a>
+      <a href="#order" class="nav-link"><b>Your Meal</b></a>
+    </div>
+
+    <div class="nav-login">
+      <form class="nav-logged" method="POST" action="/logout">
+        <span><b>Welcome! | Customer <%- user -%></b></span>
+        <input type="submit" class="btn btn-primary" value="Logout">
+      </form>
+    </div>
+
   </div>
   <% } %>
 
   <% if (user === 1) { %>
-  <div class="nav-item">
-    <form class=nav-item method="POST" action="/logout">
-      <p>Logged in as: Admin</p>
-      <input type="submit" value="Logout">
-    </form>
 
-    <a href="#welcome" class="nav-link">Welcome</a>
-    <a href="#menu" class="nav-link">Menu</a>
-    <a href="#cart" class="nav-link">Check Out</a>
-    <a href="#order" class="nav-link">Your Meal</a>
-    <a href="control_panel" class="nav-link">Control Panel</a>
+  <div class="nav-item">
+
+    <div class="nav-browse">
+      <a href="#welcome" class="nav-link"><b>Welcome</b></a>
+      <a href="#menu" class="nav-link"><b>Menu</b></a>
+      <a href="#order" class="nav-link"><b>Your Meal</b></a>
+      <a href="control_panel" class="nav-link"><b>Control Panel</b></a>
+    </div>
+
+    <div class="nav-login">
+      <form class="nav-logged" method="POST" action="/logout">
+        <span><b>Logged in as: Admin</b></span>
+        <input type="submit" class="btn btn-primary" value="Logout">
+      </form>
+    </div>
   </div>
   <% } %>
 

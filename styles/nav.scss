@@ -1,0 +1,73 @@
+.nav {
+  overflow: hidden;
+  background-image: url('../assets/images/wood1.jpeg');
+  background-position: center;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 1;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-browse {
+  display: flex;
+  align-items: center;
+}
+
+.nav-login {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 5px;
+}
+
+.nav-item p {
+  padding: 5px;
+  color: white;
+}
+
+.nav-item form {
+  padding: 5px;
+  color: white;
+}
+
+.nav-item label {
+  color: white;
+}
+
+#loginPassword {
+  color: black;
+}
+
+#loginEmail {
+  color: black;
+}
+
+.nav-logged {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-logged span {
+  padding: 5px;
+}
