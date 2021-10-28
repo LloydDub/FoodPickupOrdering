@@ -388,6 +388,11 @@ a {
   color: white;
 }
 
+#your-orders {
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
 .control-panel {
   display: flex;
   justify-content: center;
@@ -396,7 +401,7 @@ a {
   background-repeat: no-repeat;
   text-align: center;
   align-items: center;
-  align-self: center; 
+  align-self: center;
 }
 
 .update-container {
@@ -411,7 +416,7 @@ a {
 
 .control-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   margin-left: 50px;
   margin-right: 50px;
