@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
 }
 
@@ -73,7 +78,6 @@ $font-bold: "HelveticaNeue-Medium", "Helvetica Neue Medium";
   content: "$";
 }
 
-
 label {
   color: $color-label;
 }
@@ -118,7 +122,7 @@ label {
 .column-labels {
   label {
     padding-bottom: 15px;
-    margin: 20px;
+
     border-bottom: 1px solid $color-border;
   }
 
@@ -170,15 +174,15 @@ label {
     border-radius: 3px;
   }
 
-.title {
-  text-align: center;
-  padding-top: 10px;
-  line-height: 10px;
-  font-size: 32px;
-  font-family: "Open Sans";
-  font-weight: 800;
-  color: #202020;
-}
+  .title {
+    text-align: center;
+    padding-top: 10px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: "Open Sans";
+    font-weight: 800;
+    color: #202020;
+  }
 
   .remove-product:hover {
     background-color: #a44;
@@ -226,8 +230,6 @@ label {
 .checkout:hover {
   background-color: #494;
 }
-
-
 
 #checkout {
   display: flex;
@@ -290,7 +292,7 @@ a {
   #update-customer {
     display: flex;
     justify-content: space-around;
-    width:  75%;
+    width: 75%;
     margin: 8px;
   }
 }
