@@ -1,13 +1,31 @@
 #order {
+  display: flex;
+  flex-direction: column;
   background-image: url("../assets/images/burger.jpg");
   background-color: black;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: space;
   color: white;
   padding: 20px;
   display: flex;
+  flex: 2;
+  height: 100%;
 }
-
 #h2-order {
   margin: 0px;
+}
+#your-orders {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  font-size: 1.1em;
+  color: black;
+
+  text-indent: 10px;
+  margin-top: 10px;
+  border-radius: 1em;
+  border-color: black;
+  word-wrap: break-word;
 }

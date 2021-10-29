@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
   <!----- App Javascript ----->
+  <script> function submitFunction() {
+      alert("Database Updated!")
+
+    }</script>
   <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
   <script type="text/javascript" src="/scripts/app.js"></script>
 
@@ -21,10 +25,10 @@
 <p><a href="/" style="color: black;">Home</a></p>
 
 <main class="control-panel">
-  <section class="control-container">
-    
+  <section class=" ntainer">
+
     <div id="update-menu">
-      <form method="POST" action="/api/menu_items/" id="update-menu-item">
+      <form method="GET" action="/control_panel" id="update-menu-item">
         <h3>Update menu item:
         </h3><br>
         <div class="update-container">
@@ -38,11 +42,11 @@
           <input type="text" placeholder="e.g. 4.99"><br>
           <label for="location_id" style="color: black;">Location ID:</label><br>
           <input type="text" placeholder="1 for East OR 2 for West"><br>
-          <button type="submit">Submit changes</button>
+          <button type="submit" onclick="submitFunction()">Submit Changes</button>
         </div>
       </form>
-    
-      <form method="POST" action="/api/menu_items" id="add-menu-item">
+
+      <form method="GET" action="/control_panel" id="add-menu-item">
         <h3>Add menu item:
         </h3><br>
         <div class="update-container">
@@ -54,13 +58,14 @@
           <input type="text" placeholder="e.g. 4.99"><br>
           <label for="location_id">Location ID:</label><br>
           <input type="text" placeholder="1 for East OR 2 for West"><br>
-          <button type="submit">Submit new item</button>
+          <button type="submit" onclick="submitFunction()">Submit Changes</button>
         </div>
       </form>
     </div>
 
+
     <div id="update-customer">
-      <form method="POST" action="/api/customers/" id="update-customer-info">
+      <form method="GET" action="/control_panel" id="update-customer-info">
         <h3>Update customer:
         </h3><br>
         <div class="update-container">
@@ -84,11 +89,11 @@
           <input type="text" placeholder="e.g. Ontario"><br>
           <label for="postal_code">Postal code:</label><br>
           <input type="text" placeholder="e.g. N3B 4D4"><br>
-          <button type="submit">Submit changes</button>
+          <button type="submit" onclick="submitFunction()">Submit Changes</button>
         </div>
       </form>
 
-      <form method="POST" action="/api/customers" id="add-customer">
+      <form method="GET" action="/control_panel" id="add-customer">
         <h3>Add customer:
         </h3><br>
         <div class="update-container">
@@ -110,9 +115,9 @@
           <input type="text" placeholder="e.g. Ontario"><br>
           <label for="postal_code">Postal code:</label><br>
           <input type="text" placeholder="e.g. N3B 4D4"><br>
-          <button type="submit">Submit new customer</button>
+          <button type="submit" onclick="submitFunction()">Submit Changes</button>
         </div>
-      </form>  
+      </form>
     </div>
   </section>
 </main>

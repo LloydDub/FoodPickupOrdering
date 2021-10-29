@@ -5,5 +5,10 @@
     ),
     url("../assets/images/menuBackground.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+}
+
+#menu h1 {
+  margin: 0;
+  padding-left: 3em;
+  padding-top: 0.75em;
 }

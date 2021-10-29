@@ -1,15 +1,11 @@
 #welcome {
-  background-image: url("../assets/images/welcomeBackground.jpg");
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../assets/images/burgerwallpaper.jpg");
+
   text-align: center;
   display: flex;
   justify-content: center;
   align-self: center;
-  color: black;
 }
-
 
 .welcomeText {
   word-wrap: break-word;
@@ -18,7 +14,8 @@
 }
 
 .welcome {
-  background-color: rgba(255, 255, 255, .45);
+  margin-left: 40em;
+  background-color: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(20px);
   font-size: 1.25em;
   border-radius: 1em;
