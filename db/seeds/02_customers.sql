@@ -35,9 +35,9 @@ VALUES (
     1
   ),
   (
-    'admin',
-    'admin@email.com',
+    'Lloyd Worth',
+    'lloyd@lloyd.com',
     'password',
-    '00000000000',
+    '14039705853',
     3
   );

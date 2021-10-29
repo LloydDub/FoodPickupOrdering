@@ -1,4 +1,6 @@
 $(function () {
+  $("#orderStat").hide();
+  $("#order").hide();
   /* Set rates + misc */
 
   const taxRate = 0.05;
@@ -70,4 +72,14 @@ $(function () {
       recalculateCart();
     });
   }
+
+  $(".checkout").click(function () {
+    $("#orderStat").show();
+    $("#order").show();
+    $.ajax({
+      method: "GET",
+      url: "/sms",
+    });
+    event.preventDefault();
+  });
 });
