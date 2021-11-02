@@ -55,3 +55,6 @@ The following steps are only for _one_ of the group members to perform.
 ## Screenshots
 
 ![image](https://github.com/LloydDub/FoodPickupOrdering/blob/e33c5abc634722c8805d8fe133c01196528e3754/docs/screens/Screenshot%20from%202021-11-02%2011-18-11.png)
+![image](https://github.com/LloydDub/FoodPickupOrdering/blob/202b598bdccb3aa6fbeba2806e21fdf7c0b3a268/docs/screens/Screenshot%20from%202021-11-02%2011-19-05.png)
+![image](https://github.com/LloydDub/FoodPickupOrdering/blob/202b598bdccb3aa6fbeba2806e21fdf7c0b3a268/docs/screens/orders.png)
+![image](https://github.com/LloydDub/FoodPickupOrdering/blob/202b598bdccb3aa6fbeba2806e21fdf7c0b3a268/docs/screens/controlpanel.png)
