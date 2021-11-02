@@ -54,6 +54,6 @@ The following steps are only for _one_ of the group members to perform.
 
 ## Screenshots
 
-![Screenshot](screens/Screenshot from 2021-11-02 11-18-11.png)
+docs/screens/Screenshot from 2021-11-02 11-18-11.png
 
-![Screenshot](screens/Screenshot from 2021-11-02 11-19-05.png/)
+![Screenshot](docs/screens/Screenshot from 2021-11-02 11-18-11.p)
