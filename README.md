@@ -41,3 +41,9 @@ The following steps are only for _one_ of the group members to perform.
 - Node 10.x or above
 - NPM 5.x or above
 - PG 6.x
+
+## Notes on Future implementation
+
+- Future implemtations are planned, they were left out due to time contrasntins
+- Currently SMS features are just client facing and 'hard-coded'
+- Control Panel CRUD feature is not fully implemented
