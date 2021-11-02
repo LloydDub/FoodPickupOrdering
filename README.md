@@ -54,6 +54,4 @@ The following steps are only for _one_ of the group members to perform.
 
 ## Screenshots
 
-docs/screens/Screenshot from 2021-11-02 11-18-11.png
-
 ![Screenshot](docs/screens/Screenshot from 2021-11-02 11-18-11.p)
