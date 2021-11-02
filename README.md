@@ -54,4 +54,4 @@ The following steps are only for _one_ of the group members to perform.
 
 ## Screenshots
 
-![Screenshot](docs/screens/Screenshot from 2021-11-02 11-18-11.png)
+![image](https://github.com/LloydDub/FoodPickupOrdering/blob/e33c5abc634722c8805d8fe133c01196528e3754/docs/screens/Screenshot%20from%202021-11-02%2011-18-11.png)
